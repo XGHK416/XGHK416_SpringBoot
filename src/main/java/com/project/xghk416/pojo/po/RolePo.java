@@ -20,16 +20,17 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("user")
-public class UserPo extends Model<UserPo> {
+@TableName("role")
+public class RolePo extends Model<RolePo> {
 
     private static final long serialVersionUID=1L;
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String name;
-
+    /**
+     * 角色
+     */
     private String role;
 
 
