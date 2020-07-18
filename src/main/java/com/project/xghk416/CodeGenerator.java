@@ -73,10 +73,10 @@ public class CodeGenerator {
          */
         DataSourceConfig dsc = new DataSourceConfig();
         dsc.setDbType(DbType.MYSQL);
-        dsc.setUrl("jdbc:mysql://39.106.228.42:3306/Myself?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/arknights?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.jdbc.Driver");
-        dsc.setUsername("Myself");
+        dsc.setUsername("root");
         dsc.setPassword("hongzi123");
         mpg.setDataSource(dsc);
 
